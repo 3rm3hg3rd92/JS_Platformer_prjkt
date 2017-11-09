@@ -64,7 +64,12 @@ function Vector(x, y) {
 }
 
 // Vector arithmetic: v_1 + v_2 = <a,b>+<c,d> = <a+c,b+d>
+// Vector arithmetic: v_1 + v_2 = <x,y> + <a,b> = <x+a, y+b>
 Vector.prototype.plus = function(other) {
+	/*var addVector  new Vector(0,0);
+	addVector.x = this.x + other.x;
+	addVector.y = this.y + other.y;
+	return addVector;*/
   return new Vector(this.x + other.x, this.y + other.y);
 };
 
